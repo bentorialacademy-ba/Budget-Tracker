@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker - Contact</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Contact Budget Tracker</div>
+
+    <div class="link">
+      <a href="./">Home</a>
+      <a href="#">Trackings</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-intro">
+      <p class="eyebrow">We are listening</p>
+      <h1>Make your money habits easier to manage.</h1>
+      <p class="contact-lede">Have a question about Budget Tracker, an idea for a useful improvement, or a problem to report? Send a note and tell us what is on your mind.</p>
+
+      <div class="contact-details">
+        <div>
+          <span class="contact-label">Response time</span>
+          <strong>Usually within 1-2 days</strong>
+        </div>
+        <div>
+          <span class="contact-label">Best for</span>
+          <strong>Questions, feedback, and bugs</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-card" aria-labelledby="contact-form-title">
+      <div class="contact-card-heading">
+        <p class="eyebrow">Drop us a line</p>
+        <h2 id="contact-form-title">Send a message</h2>
+      </div>
+
+      <form class="contact-form">
+        <div class="contact-field-row">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </label>
+        </div>
+
+        <label>
+          What can we help with?
+          <select name="topic" required>
+            <option value="" selected disabled>Choose a topic</option>
+            <option value="question">A question</option>
+            <option value="feedback">Feedback or an idea</option>
+            <option value="bug">Report a problem</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Tell us a little more..." required></textarea>
+        </label>
+
+        <div class="contact-form-footer">
+          <button type="submit" title="Send your message">Send message</button>
+          <button type="reset" title="Reset Form">Clear</button>
+          <p class="contact-form-note">We'll get back to you as soon as we can.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="./contact.js"></script>
+</body>
+</html>

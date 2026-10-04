@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tracking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+		<div class="logo">New Tracking</div>
+		
+		<div class="link">
+      <a href="./">Home</a>
+      <a href="#">Trackings</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+	</header>
+
+  <button type="submit" title="New Tracking">New Tracking</button>
+
+  <script>
+    document.querySelector('button').addEventListener('click', () => {
+      const title = prompt('title')
+      if(!title)return
+      window.location.href = `./budgets.html?t=${title}`
+    })
+  </script>
+</body>
+</html>

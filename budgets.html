@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="./style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+</head>
+<body>
+  <header>
+    <div class="logo">Budget Tracker</div>
+
+    <div class="link">
+      <a href="./">Home</a>
+      <a href="#">Trackings</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+  </header>
+
+  <div class="budgets" title="Budgets">
+    <header>
+      <div class="title"><span class="budgetsLen" style="font-family: Arial, Helvetica, sans-serif;">0</span> Budgets <span class="search-status" aria-live="polite"></span></div>
+      <div class="action">
+        <button class="new-budget-btn" title="New Budget">New</button>
+        <button class="new-budget-clear-btn" title="Clear Budgets" style="background-color: var(--warning);">Clear</button>
+        <button class="search-btn" title="Search Budget"><i class="fa fa-search"></i></button>
+        <button class="all-btn" title="ALL Budget">All</button>
+      </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Description</td>
+          <td>Type</td>
+          <td>Amount</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="summary-box">
+      <div class="summary-toggle" title="See your balance">
+        <div class="txt">Balance</div>
+      </div>
+      <div class="summary">
+        <div class="total-income" title="Total income">
+          <strong>Total Income:</strong>
+          <span>$0000</span>
+        </div>
+        <div class="total-expense" title="Total expense">
+          <strong>Total Expense:</strong>
+          <span>$0000</span>
+        </div>
+        <div class="balance" title="Balance">
+          <strong>Balance:</strong>
+          <span>$0000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="new-budget" title="New Budget">
+    <h1 class="title">New Budget</h1>
+
+    <form>
+      <input title="New Budget type" type="text" class="type" placeholder="Type e.g: income or expense" required>
+
+      <br>
+
+      <input title="New Budget description" type="text" class="description" placeholder="Description e.g: salary, food e.t.c" required>
+
+      <br>
+
+      <input title="New Budget amount" type="text" class="amount" placeholder="Amount" min="0" step="0.01" required
+      >
+
+      <br>
+      
+      <button type="submit" title="Add Budget">Add</button>
+    </form>
+  </div>
+  
+  <div class="mes-overlay"></div>
+  <div class="message">
+    <div class="content">Message</div>
+    <div class="foot">
+      <button>Ok</button>
+    </div>
+  </div>
+
+  <div class="search">
+    <form class="box">
+      <input type="text" placeholder="Search: id, type, description or amount" required>
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+  
+</body>
+</html>
